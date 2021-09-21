@@ -9,14 +9,14 @@ from distutils.core import setup
 setup(
   name = 'GraphAttentionNetworks',         
   packages = ['GraphAttentionNetworks'],   
-  version = '0.2',       
+  version = '0.1',       
   license='MIT',        
   description = 'A Graph Attention Framework for extracting Graph Attention embeddings and implementing Multihead Graph Attention Networks',   
   long_description='',
   author = 'ABHILASH MAJUMDER',
   author_email = 'debabhi1396@gmail.com',
   url = 'https://github.com/abhilash1910/GraphAttentionNetworks',   
-  download_url = 'https://github.com/abhilash1910/GraphAttentionNetworks/archive/v_02.tar.gz',    
+  download_url = 'https://github.com/abhilash1910/GraphAttentionNetworks/archive/v_01.tar.gz',    
   keywords = ['Anisotropic Embeddings','Graph Convolution Network','Graph Attention Network','Chebyshev networks','Higher order Graph embeddings','Multihead Graph Attention Framework','Tensorflow'],   
   install_requires=[           
 

@@ -7,8 +7,8 @@ Created on Wed Sep 22 01:42:49 2021
 
 import pandas as pd
 import numpy as np
-import GraphAttention.GraphMultiheadAttention as gat
-import GraphAttention.GraphAttentionBase as gat_base
+import GraphAttentionNetworks.GraphMultiheadAttention as gat
+import GraphAttentionNetworks.GraphAttentionBase as gat_base
 
 from plotly.offline import download_plotlyjs, init_notebook_mode, iplot,plot
 import plotly

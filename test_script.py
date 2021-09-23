@@ -23,11 +23,11 @@ init_notebook_mode(connected=True)
 
 
 def test_gat_embeddings():
-    print("Testing for VanillaGCN embeddings having a source and target label")
+    print("Testing for GAT embeddings having a source and target label")
     train_df=pd.read_csv("E:\\train_graph\\train.csv")
     source_label='question_body'
     target_label='category'
-    print("Input parameters are hidden units , number of layers,subset (values of entries to be considered for embeddings),epochs ")
+    print("Input parameters are hidden units , number of layers,number of heads,mode,subset (values of entries to be considered for embeddings),epochs ")
     hidden_units=32
     num_layers=4
     subset=34
@@ -57,7 +57,7 @@ def test_gat_base_layer():
     train_df_temp=pd.read_csv("E:\\train_graph\\train.csv")
     source_label='question_body'
     target_label='category'
-    print("Input parameters are hidden units , number of layers,subset (values of entries to be considered for embeddings),epochs ")
+    print("Input parameters are hidden units , number of layers,mode,number of heads,subset (values of entries to be considered for embeddings),epochs ")
     hidden_units=32
     num_layers=4
     subset=34

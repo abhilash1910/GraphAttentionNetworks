@@ -63,13 +63,16 @@ def test_gat_embeddings():
 
 ### Theory
 
+<img src="https://dsgiitr.com/images/blogs/GAT/GCN_vs_GAT.jpg">
+
+
 - Neural GCN Multiplication: In order to obtain sufficient expressive power to transform the input features into higher level features, atleast one learnable linear transformation is required. To that end, as an initial step, a shared linear transformation, parametrized by a weight matrix, W∈RF'×F , is applied to every node.
 
 - Self-Attention Pointwise: We then compute a pair-wise un-normalized attention score between two neighbors. Here, it first concatenates the z embeddings of the two nodes, where || denotes concatenation, then takes a dot product of it with a learnable weight vector  and applies a LeakyReLU in the end. This form of attention is usually called additive attention, in contrast with the dot-product attention used for the Transformer model. We then perform self-attention on the nodes, a shared attentional mechanism a : RF'×RF'→R to compute attention coefficients 
 
 - Softmax Aggregation: In this case we are applying a softmax kernel on the attention scores (normalized) and then multiplying it with the feature map. The aggregation map can be concatenation or avergaing.This is the case for multihead attention. If we perform multi-head attention on the final (prediction) layer of the network, concatenation is no longer sensible and instead, averaging is employed, and delay applying the final nonlinearity (usually a softmax or logistic sigmoid for classification problems). 
 
-The [GraphAttenionBase.py] implements the core GAT Multihead algorithm with both concatenation and aggregation variation. The returned output is of dimensions -> [batch size, number of nodes, labels]
+The [GraphAttenionBase.py](https://github.com/abhilash1910/GraphAttentionNetworks/blob/master/GraphAttentionNetworks/GraphAttentionBase.py) implements the core GAT Multihead algorithm with both concatenation and aggregation variation. The returned output is of dimensions -> [batch size, number of nodes, labels]
 
 
 

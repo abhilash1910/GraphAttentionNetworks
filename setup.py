@@ -12,7 +12,7 @@ setup(
   version = '0.1',       
   license='MIT',        
   description = 'A Graph Attention Framework for extracting Graph Attention embeddings and implementing Multihead Graph Attention Networks',   
-  long_description='',
+  long_description='This package is used for extracting Graph Attention Embeddings and provides a framework for a Tensorflow Graph Attention Layer which can be used for knowledge graph /node base semantic tasks. It determines the pair wise embedding matrix for a higher order node representation and concatenates them with an attention weight. It then passes it through a leakyrelu activation for importance sampling and damps out negative effect of a node.It then applies a softmax layer for normalization of the attention results and determines the final output scores.The GraphAttentionBase.py script implements a Tensorflow/Keras Layer for the GAT which can be used and the GraphMultiheadAttention.py is used to extract GAT embeddings.',
   author = 'ABHILASH MAJUMDER',
   author_email = 'debabhi1396@gmail.com',
   url = 'https://github.com/abhilash1910/GraphAttentionNetworks',   

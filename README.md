@@ -1,4 +1,4 @@
-# GraphAttentionNetwork
+# GraphAttentionNetworks
 
 
 ## A framework implementation of Graph Attention Networks :robot:

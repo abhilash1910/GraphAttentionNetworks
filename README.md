@@ -68,10 +68,11 @@ def test_gat_embeddings():
 `$z_i^{(l)}&=W^{(l)}h_i^{(l)}$`
 
 - Self-Attention Pointwise: We then compute a pair-wise un-normalized attention score between two neighbors. Here, it first concatenates the z embeddings of the two nodes, where || denotes concatenation, then takes a dot product of it with a learnable weight vector  and applies a LeakyReLU in the end. This form of attention is usually called additive attention, in contrast with the dot-product attention used for the Transformer model. We then perform self-attention on the nodes, a shared attentional mechanism a : RF'×RF'→R to compute attention coefficients 
-`\begin{split}\begin{align}
+<div class="math">
+\begin{equation}
 e_{ij}^{(l)}&=\text{LeakyReLU}(\vec a^{(l)^T}(z_i^{(l)}||z_j^{(l)}))\\
-\end{align}\end{split}`
-
+\end{equation}
+</div>
 - 
 
 

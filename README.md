@@ -74,7 +74,7 @@ def test_gat_embeddings():
 
 The [GraphAttenionBase.py](https://github.com/abhilash1910/GraphAttentionNetworks/blob/master/GraphAttentionNetworks/GraphAttentionBase.py) implements the core GAT Multihead algorithm with both concatenation and aggregation variation. The returned output is of dimensions -> [batch size, number of nodes, labels]
 
-
+For GCN embeddings please refer to the repository:[GCN](https://github.com/abhilash1910/SpectralEmbeddings)
 
 ## Contributing
 
